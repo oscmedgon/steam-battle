@@ -1,7 +1,13 @@
 body{
   background-image: url(../images/texture.jpg);
 }
-.mainTitle{
-  text-align: center;
-  color: white;
+.mainBody{
+  margin-top: 40px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  .mainTitle{
+    text-align: center;
+    color: yellow;
+    text-shadow: 0px 0px 5px black;
+  }
 }
