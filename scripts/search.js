@@ -1,4 +1,4 @@
-$('#user-input').on('submit', function(event){
+  $('#user-input').on('submit', function(event){
   event.preventDefault()
   var players = [$('#player1').val()]
   if($('#player2').val()){
@@ -9,4 +9,5 @@ $('#user-input').on('submit', function(event){
   }
 
   console.log( `${players} ${players.length}`)
+  return players
 })
