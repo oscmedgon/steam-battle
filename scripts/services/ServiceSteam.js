@@ -1,6 +1,6 @@
 (function() {
 
-  const token = 'A463AB6CD2DB0B7A0CB98FD7270A3D43'
+  const token = 'A503C16ED9072A5F9C8F45C8E4E023F9'
 
   const vanityNameSearch = 'http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/'
   const urlGetAlbums = 'https://api.spotify.com/v1/artists/<%ID_ARTIST%>/albums'
