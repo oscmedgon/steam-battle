@@ -5,15 +5,6 @@
   const vanityNameSearch = 'http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/'
   const urlGetAlbums = 'https://api.spotify.com/v1/artists/<%ID_ARTIST%>/albums'
   const urlGetTracks = 'https://api.spotify.com/v1/albums/<%ID_ALBUM%>/tracks'
-
-  // function searchSteamID( vanityName ) {
-  //   var urlVanity = urlGetAlbums.replace('<%VANITI_NAME%>', vanityName).replace('<%TOKEN%>' , token)
-  //   const url = urlVanity
-  //
-  //   return $.ajax({
-  //     url: urlVanity
-  //   })
-  // }
   function searchSteamID(vanityName) {
     var urlVanity = urlGetAlbums.replace('<%VANITI_NAME%>', vanityName).replace('<%TOKEN%>' , token)
 
@@ -21,7 +12,7 @@
       url: vanityNameSearch,
       data: {
         vanityurl : vanityName,
-        key : token,
+        key : token
       }
     })
   )}
