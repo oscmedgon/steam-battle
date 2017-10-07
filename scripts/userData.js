@@ -1,6 +1,6 @@
   $('#user-input').on('submit', function(event){
   event.preventDefault()
-  var players = [$('#player1').val()]
+  players = [$('#player1').val()]
   if($('#player2').val()){
     players.push($('#player2').val())
   }
