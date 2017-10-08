@@ -31,11 +31,6 @@
         key : token
       }
     })
-    .then(function(oData){
-      const gameListCount = oData.response.game_count
-      const gameList = oData.response.games
-      gameList.forEach(function(list){userList.push(list.appid)})
-    })
   )}
   // API NUMBER 3 (IMPORTANT INFO THIS FUNCTION SOLD BE CALLED WITTH A STRING)
   //EJECUTE THIS COMMAND IN CONSOLE TO GET A PREVIEW OF THE SERVER RESPONSE
