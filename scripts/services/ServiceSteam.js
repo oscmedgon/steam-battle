@@ -6,7 +6,7 @@
   const urlSearchUserGameList = 'https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/'
   const urlGameAchivements = 'http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/'
   const urlUserInfo = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/'
-  const getGameInfo = 'http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/'
+  const getGameInfo = 'https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/'
   // API NUMBER 1 (IMPORTANT INFO THIS FUNCTION SOLD BE CALLED WITTH A STRING)
   //EJECUTE THIS COMMAND IN CONSOLE TO GET A PREVIEW OF THE SERVER RESPONSE
   // STEAM_SERVICE.searchSteamID('undertakertfk').then(function(data){console.log(data)})
@@ -63,11 +63,11 @@
   // API 5 (IMPORTANT INFO THIS FUNCTION SOLD BE CALLED WITTH A STRING)
   //EJECUTE THIS COMMAND IN CONSOLE TO GET A PREVIEW OF THE SERVER RESPONSE
   // STEAM_SERVICE.searchGameInfo(['218620']).then(function(data){console.log(data)})
-  function searchGameInfo(gameId) {
+  function searchGameInfo(appId) {
     return ($.ajax({
-      url: searchGameInfo,
+      url: getGameInfo,
       data: {
-        appid : gameId,
+        appid : appId,
         key : token
       }
     })
