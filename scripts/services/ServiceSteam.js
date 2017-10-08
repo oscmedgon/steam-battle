@@ -2,10 +2,10 @@
 
   const token = 'A503C16ED9072A5F9C8F45C8E4E023F9'
   userList = []
-  const urlVanityNameSearch = 'http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/'
-  const urlSearchUserGameList = 'http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/'
-  const urlGameAchivements = 'http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/'
-  const urlUserInfo = 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/'
+  const urlVanityNameSearch = 'https://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/'
+  const urlSearchUserGameList = 'https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/'
+  const urlGameAchivements = 'https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/'
+  const urlUserInfo = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/'
   // API NUMBER 1 (IMPORTANT INFO THIS FUNCTION SOLD BE CALLED WITTH A STRING)
   //EJECUTE THIS COMMAND IN CONSOLE TO GET A PREVIEW OF THE SERVER RESPONSE
   // STEAM_SERVICE.searchSteamID('undertakertfk').then(function(data){console.log(data)})
