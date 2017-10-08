@@ -1,6 +1,6 @@
 /* global STEAM_SERVICE   */
 // THIS FUNCTION SHOULD BE CALLED WITH AN ARRAY WITH ONE OR THREE STRINGS INSIDE
-var testArray = [ '76561198000981199', '76561198017534701', '76561198000981199' ]
+var testArray = [ '76561198000981199', '76561198017534701', '76561198046727250' ]
 function generateGameList (players) {
   var iWillGetMyArray = new Promise(
     function (resolve, reject) {
@@ -27,7 +27,17 @@ function generateGameList (players) {
       })
       return !!result
     })
+    if( players.length === 3){
+      var finalFilteredGameList = filteredGameList.filter(function (firstElement){
+
+        var result = idSorted[2].find(function(secondElement){
+          return firstElement.appid === secondElement.appid
+        })
+        return result
+      })
+    }
     console.log(filteredGameList)
+    
   })
 }
 

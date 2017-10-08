@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <title>Steam Invaders</title>
+  <title>Steam Battle</title>
 </head>
 <body>
   <div class="container">
@@ -26,6 +26,11 @@
           <button type="submit" name="button" class="btn btn-warning"><img width="30px" src="images/fight.png" alt="">Fight<img width="30px" src="images/fight.png" alt=""></button>
         </div>
       </form>
+    </section>
+    <section id="gameList">
+      <ul>
+
+      </ul>
     </section>
   </div>
   <footer class="footer">
@@ -54,10 +59,12 @@
 </footer>
   <script src="scripts/jquery-3.2.1.min.js"</script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" </script>
-  <script src="scripts\getAchivementList.js" charset="utf-8"></script>
+
+  <script src="scripts/services/ServiceSteam.js" charset="utf-8"></script>
+  <script src="scripts/searchGameName.js" charset="utf-8"></script>
+  <script src="scripts/getAchivementList.js" charset="utf-8"></script>
   <script src="scripts/generateGameList.js" charset="utf-8"></script>
   <script src="scripts/getSteamId64.js" charset="utf-8"></script>
   <script src="scripts/userData.js" charset="utf-8"></script>
-  <script src="scripts/services/ServiceSteam.js" charset="utf-8"></script>
 </body>
 </html>
