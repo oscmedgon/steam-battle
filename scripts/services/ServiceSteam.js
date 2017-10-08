@@ -1,7 +1,7 @@
 (function() {
 
   const token = 'A503C16ED9072A5F9C8F45C8E4E023F9'
-
+  userList = []
   const urlVanityNameSearch = 'http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/'
   const urlSearchUserGameList = 'http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/'
   const urlGameAchivements = 'http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/'
@@ -20,7 +20,8 @@
   )}
   // API NUMBER 2 (IMPORTANT INFO THIS FUNCTION SOLD BE CALLED WITTH A STRING)
   //EJECUTE THIS COMMAND IN CONSOLE TO GET A PREVIEW OF THE SERVER RESPONSE
-  // STEAM_SERVICE.searchGameAchivements('218620').then(function(data){console.log(data)})
+  // STEAM_SERVICE.searchUserGameList('76561198000981199')
+  // console.log(userList)
   // STEAM GAMES WITH ANY ACHIVEMENTS RETURN A EMPTY OBJECT
   function searchUserGameList(userId) {
     return ($.ajax({
@@ -33,7 +34,6 @@
     .then(function(oData){
       const gameListCount = oData.response.game_count
       const gameList = oData.response.games
-      userList = []
       gameList.forEach(function(list){userList.push(list.appid)})
     })
   )}
